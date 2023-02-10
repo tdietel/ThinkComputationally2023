@@ -12,6 +12,7 @@ end = datetime.now()
 print("value:", val)
 print("duration:", end-start)
 
-with open("internet.yaml", "w") as f:
+with open("internet.yaml", "w") as f: #Write to file
     f.write(f"value: \"{val}\"\n")
     f.write(f"duration: {end-start}\n")
+
